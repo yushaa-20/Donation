@@ -37,12 +37,7 @@ function getBalance() public view returns(uint256) {
     return address(this).balance;
 }
 And finally, the getBalance()   function  returns the current balance of the contract after the funds are withdrawn.
-library PriceConverter {
-```
-- **PriceConverter**: This library contains functions for fetching and converting the price of Ether.
 
-#### 4. **Get Price Function**
-```solidity
 function getPrice() internal view returns (uint256) {
     // ETH/USD price feed on Sepolia Testnet
     AggregatorV3Interface priceFeed = AggregatorV3Interface(
